@@ -39,13 +39,14 @@ export default {
 	** https://nuxtjs.org/guide/plugins
 	*/
 	plugins: [
+		'~/components/include.js',
 	],
 
 	/*
 	** Auto import components
 	** See https://nuxtjs.org/api/configuration-components
 	*/
-	components: true,
+	components: false,
 
 	/*
 	** Nuxt.js dev-modules
