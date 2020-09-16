@@ -1,17 +1,15 @@
 <template>
-	<div class="max-w-container mx-auto px-5">
-		<logo class="w-32 h-32" />
-
-		<h1>Hello, world!</h1>
-	</div>
+	<container class="py-8">
+		<h1 v-text="$data.model.title" />
+	</container>
 </template>
 
 <script>
-	import Logo from '../components/global/Logo';
-
 	export default {
-		components: {
-			Logo,
+		async asyncData ({ $content }) {
+			const model = await $content('home').fetch();
+
+			return model;
 		},
 	};
 </script>
