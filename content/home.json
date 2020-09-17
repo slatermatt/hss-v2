@@ -69,7 +69,7 @@
 				}
 			}
 		],
-		"page-builder": [
+		"pageBuilder": [
 			{
 				"type": "intro",
 				"value": {

@@ -1,52 +1,24 @@
 <template>
 	<div>
-		<section>
-			<container>
-				<h1>Carousel</h1>
+		<section class="border border-blue p-5 overflow-scroll">
+			<span>component: carousel</span>
 
-				<ul>
-					<li
-						v-for="(message, index) in $data.model.carousel.messages"
-						:key="index"
-						v-text="message.title"
-					/>
-				</ul>
-			</container>
+			<div class="mt-4">
+				<pre v-text="$data.model.carousel" />
+			</div>
 		</section>
 
-		<section>
-			<container>
-				<h1>Cards</h1>
+		<section class="border border-blue p-5 overflow-scroll">
+			<span>component: cards</span>
 
-				<div
-					v-for="(card, index) in $data.model.cards"
-					:key="index"
-				>
-					<span v-text="card.icon" />
-
-					<h2 v-text="card.title" />
-
-					<p v-text="card.content" />
-
-					<ul>
-						<li
-							v-for="(item, i) in card.items"
-							:key="i"
-							v-text="item"
-						/>
-					</ul>
-
-					<a
-						:href="card.link.url"
-						v-text="card.link.title"
-					/>
-
-					<button
-						v-text="card.cta.title"
-					/>
-				</div>
-			</container>
+			<div class="mt-4">
+				<pre v-text="$data.model.cards" />
+			</div>
 		</section>
+
+		<page-builder
+			:components="$data.model.pageBuilder"
+		/>
 	</div>
 </template>
 
