@@ -9,7 +9,8 @@
 	},
 	"colors": {
 		"brand": {
-			"navy": "#19222F"
+			"green": "#2b5542",
+			"off-white": "#f5f5f5"
 		},
 		"black": "#000",
 		"white": "#fff",

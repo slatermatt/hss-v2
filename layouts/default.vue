@@ -1,5 +1,10 @@
 <template>
-	<div class="flex flex-col min-h-screen">
+	<div
+		:class="[
+			'flex flex-col min-h-screen',
+			'bg-white text-grey-700',
+		]"
+	>
 		<site-header class="border-4 border-red" />
 
 		<main class="flex-auto border-4 border-green">
