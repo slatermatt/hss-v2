@@ -8,9 +8,13 @@
 			</div>
 		</section>
 
-		<content-builder
-			:components="$data.model.copy"
-		/>
+		<section class="border border-blue p-5 overflow-scroll">
+			<span>component: all-news</span>
+
+			<div class="mt-4">
+				<pre v-text="$data.articles" />
+			</div>
+		</section>
 
 		<section class="border border-blue p-5 overflow-scroll">
 			<span>component: cta</span>
@@ -25,7 +29,10 @@
 <script>
 	export default {
 		async asyncData ({ $content }) {
-			return await $content('about').fetch();
+			const articles = await $content('articles').fetch();
+			const model = await $content('news').fetch();
+
+			return { articles, ...model };
 		},
 	};
 </script>
