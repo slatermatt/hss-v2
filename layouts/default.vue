@@ -16,7 +16,7 @@
 
 		<site-footer
 			class="border-4 border-blue"
-			v-bind="cFooter"
+			v-bind="$props.global"
 		/>
 	</div>
 </template>
@@ -35,18 +35,6 @@
 			global: {
 				type: Object,
 				default: () => require('../content/global.json'),
-			},
-		},
-
-		computed: {
-			cFooter() {
-				const { links, socials, brand } = this.$props.global;
-
-				if (this.$props.global) {
-					return { links, socials, brand };
-				} else {
-					return { links: null, socials: null, brand: 'foo' };
-				}
 			},
 		},
 	};
