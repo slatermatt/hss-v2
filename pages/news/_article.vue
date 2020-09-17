@@ -17,7 +17,7 @@
 <script>
 	export default {
 		async asyncData ({ $content, params }) {
-			return await $content(`/news/${params.article}`).fetch();
+			return await $content(`/articles/${params.article}`).fetch();
 		},
 	};
 </script>
