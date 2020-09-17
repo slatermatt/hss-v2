@@ -5,10 +5,7 @@
 			'bg-white text-grey-700',
 		]"
 	>
-		<site-header
-			class="border-4 border-red"
-			v-bind="$props.global"
-		/>
+		<site-header v-bind="$props.global" />
 
 		<main class="flex-auto border-4 border-green">
 			<Nuxt />

@@ -1,12 +1,25 @@
 <template>
-	<container tag="header" class="py-8">
-		<h1>Site header</h1>
-	</container>
+	<header class="bg-brand-green">
+		<container class="py-8">
+			<nuxt-link
+				to="/"
+				class="block max-w-logo"
+			>
+				<logo />
+			</nuxt-link>
+		</container>
+	</header>
 </template>
 
 <script>
+	import Logo from '../common/Logo';
+
 	export default {
 		inheritAttrs: false,
+
+		components: {
+			Logo,
+		},
 
 		props: {
 			links: {

@@ -45,8 +45,15 @@ module.exports = {
 				...widths,
 				...(negative(widths)),
 			}),
+			padding: {
+				'logo': ratio(426, 112),
+				'9/16': ratio(16, 9),
+			},
 			width: {
 				...widths,
+			},
+			maxWidth: {
+				'logo': relative(160),
 			},
 		},
 	},
