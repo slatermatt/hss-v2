@@ -1,17 +1,57 @@
 <template>
-	<header class="sticky top-0">
+	<header class="sticky top-0 bg-brand-green md:shadow-2xl">
 		<container
 			:class="[
 				'flex items-center justify-between bg-brand-green',
-				'relative z-2 py-6 md:py-8',
+				'relative z-2 py-6',
+				'md:py-8 xl:justify-start',
 			]"
 		>
 			<nuxt-link
 				to="/"
-				class="block w-full max-w-logo md:max-w-logo-xl"
+				class="block w-full max-w-logo lg:max-w-logo-xl"
 			>
 				<logo />
 			</nuxt-link>
+
+			<nav class="hidden md:block xl:ml-auto">
+				<ul class="flex space-x-6 lg:space-x-8">
+					<li
+						v-for="(link, index) in $props.links"
+						:key="index"
+					>
+						<router-link
+							:to="link.url"
+							class="text-white"
+							v-text="link.title"
+						/>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="hidden relative bg-white py-6 ml-8 -mt-8 -mb-12 xl:block">
+				<div
+					v-for="(location, index) in $props.locations"
+					:key="index"
+					:class="[
+						'flex flex-col justify-center items-center px-10',
+						{
+							'mt-2': index,
+						},
+					]"
+				>
+					<p
+						class="text-sm"
+						v-text="location.title"
+					/>
+
+					<a
+						class="text-xl text-brand-green font-bold"
+						:href="`tel:${location.number.formatted}`"
+						v-text="location.number.text"
+					/>
+				</div>
+			</div>
 
 			<burger
 				:open="$data.visible"
@@ -51,11 +91,11 @@
 				</container>
 
 				<div class="relative bg-white py-6">
-					<container
+					<div
 						v-for="(location, index) in $props.locations"
 						:key="index"
 						:class="[
-							'flex flex-col justify-center items-center',
+							'flex flex-col justify-center items-center px-5',
 							{
 								'mt-2': index,
 							},
@@ -71,12 +111,7 @@
 							:href="`tel:${location.number.formatted}`"
 							v-text="location.number.text"
 						/>
-					</container>
-
-					<!-- <span
-						class="absolute h-screen left-0 top-24/24 w-full bg-black opacity-25"
-						@click="$data.visible = false"
-					/> -->
+					</div>
 
 					<transition
 						enter-class="opacity-0"

@@ -59,6 +59,7 @@ module.exports = {
 				...widths,
 			},
 			maxWidth: {
+				container: relative(1400),
 				'logo': relative(120),
 				'logo-xl': relative(160),
 			},
