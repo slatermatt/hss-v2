@@ -52,6 +52,9 @@ module.exports = {
 				'logo': ratio(426, 112),
 				'9/16': ratio(16, 9),
 			},
+			spacing: {
+				em: '1em',
+			},
 			height: {
 				'2px': '2px',
 			},
