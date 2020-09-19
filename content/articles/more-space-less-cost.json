@@ -1,0 +1,39 @@
+{
+	"title": "More space, less cost",
+	"excerpt": "At Harrogate Storage Solutions we take pride in being able to offer more secure self storage space at less cost",
+	"copy": [
+		{
+			"type": "media",
+			"value": {
+				"image": {
+					"src": "//placehold.it/1600x1200",
+					"alt": "alt text"
+				}
+			}
+		},
+		{
+			"type": "paragraph",
+			"value": {
+				"content": "With 52 ground floor, drive up, dry, safe and secure self storage units, we believe we’re the most competitive in the local area with our 24 hr customer access / 365 days a year."
+			}
+		},
+		{
+			"type": "paragraph",
+			"value": {
+				"content": "Our customer’s can come and go as they please, no appointments needed and be secure in the knowledge that our 24 hr HD CCTV will be keeping an eye on your things whilst they are not here."
+			}
+		},
+		{
+			"type": "paragraph",
+			"value": {
+				"content": "We are a local independent business, with various sized storage units and extremely competitive prices starting from £40 a week, our units are insulated eliminating the risk of damp or condensation, keeping your items dry, safe and clean."
+			}
+		},
+		{
+			"type": "paragraph",
+			"value": {
+				"content": "We also now offer a FREE van for customers moving into our units, no need to worry about searching through removal companies you can have FREE use of our van to move in when you store with us long or short term."
+			}
+		}
+	]
+}

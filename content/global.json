@@ -1,0 +1,57 @@
+{
+	"brand": "Harrogate Storage Solutions",
+	"links": [
+		{
+			"title": "Home",
+			"url": "/"
+		},
+		{
+			"title": "Size estimator",
+			"url": "/size-estimator"
+		},
+		{
+			"title": "About",
+			"url": "/about"
+		},
+		{
+			"title": "Testimonials",
+			"url": "/testimonials"
+		},
+		{
+			"title": "News",
+			"url": "/news"
+		},
+		{
+			"title": "Contact",
+			"url": "/contact"
+		}
+	],
+	"locations": [
+		{
+			"title": "The Quarry Killinghall",
+			"number": {
+				"formatted": "01423536220",
+				"text": "01423 536220"
+			}
+		},
+		{
+			"title": "Mornington Terrace",
+			"number": {
+				"formatted": "01423560947",
+				"text": "01423 560947"
+			}
+		}
+	],
+	"socials": [
+		{
+			"icon": "facebook",
+			"title": "Facebook",
+			"url": "https://www.facebook.com/Harrogatestorage/"
+		},
+		{
+			"icon": "twitter",
+			"title": "Twitter",
+			"url": "https://twitter.com/HGStorage"
+		}
+	]
+}

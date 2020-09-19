@@ -1,31 +1,23 @@
 <template>
 	<div>
 		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: carousel</span>
+			<span>component: intro</span>
 
 			<div class="mt-4">
-				<pre v-text="$data.model.carousel" />
+				<pre v-text="$data.title" />
 			</div>
 		</section>
 
-		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: cards</span>
-
-			<div class="mt-4">
-				<pre v-text="$data.model.cards" />
-			</div>
-		</section>
-
-		<page-builder
-			:components="$data.model.pageBuilder"
+		<content-builder
+			:components="$data.copy"
 		/>
 	</div>
 </template>
 
 <script>
 	export default {
-		async asyncData ({ $content }) {
-			return await $content('home').fetch();
+		async asyncData ({ $content, params }) {
+			return await $content(`/articles/${params.article}`).fetch();
 		},
 
 		head() {
@@ -35,7 +27,7 @@
 					{
 						hid: 'description',
 						name: 'description',
-						content: this.$data.description
+						content: this.$data.excerpt
 					},
 					{
 						hid: 'og:title',
@@ -45,7 +37,7 @@
 					{
 						hid: 'og:description',
 						property: 'og:description',
-						content: this.$data.description
+						content: this.$data.excerpt
 					},
 					{
 						hid: 'twitter:title',
@@ -55,7 +47,7 @@
 					{
 						hid: 'twitter:description',
 						name: 'twitter:description',
-						content: this.$data.description
+						content: this.$data.excerpt
 					}
 				]
 			}

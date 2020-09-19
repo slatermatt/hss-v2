@@ -45,8 +45,26 @@ module.exports = {
 				...widths,
 				...(negative(widths)),
 			}),
+			transformOrigin: {
+				'left-center': 'left center',
+			},
+			padding: {
+				'logo': ratio(426, 112),
+				'9/16': ratio(16, 9),
+			},
+			spacing: {
+				em: '1em',
+			},
+			height: {
+				'2px': '2px',
+			},
 			width: {
 				...widths,
+			},
+			maxWidth: {
+				container: relative(1400),
+				'logo': relative(120),
+				'logo-xl': relative(160),
 			},
 		},
 	},

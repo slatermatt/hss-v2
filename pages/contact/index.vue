@@ -1,31 +1,43 @@
 <template>
 	<div>
 		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: carousel</span>
+			<span>component: intro</span>
 
 			<div class="mt-4">
-				<pre v-text="$data.model.carousel" />
+				<pre v-text="$data.model.intro" />
 			</div>
 		</section>
 
 		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: cards</span>
+			<span>component: contact-info</span>
 
 			<div class="mt-4">
-				<pre v-text="$data.model.cards" />
+				<pre v-text="$data.model.contactInfo" />
 			</div>
 		</section>
 
-		<page-builder
-			:components="$data.model.pageBuilder"
-		/>
+		<section class="border border-blue p-5 overflow-scroll">
+			<span>component: contact-form</span>
+
+			<div class="mt-4">
+				<pre v-text="$data.model.contactForm" />
+			</div>
+		</section>
+
+		<section class="border border-blue p-5 overflow-scroll">
+			<span>component: cta</span>
+
+			<div class="mt-4">
+				<pre v-text="$data.model.cta" />
+			</div>
+		</section>
 	</div>
 </template>
 
 <script>
 	export default {
 		async asyncData ({ $content }) {
-			return await $content('home').fetch();
+			return await $content('contact').fetch();
 		},
 
 		head() {

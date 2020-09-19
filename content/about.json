@@ -1,0 +1,76 @@
+{
+	"title": "Harrogate Storage Solutions – About",
+	"description": "We take pride in offering more space at less cost",
+	"model": {
+		"intro": {
+			"title": "How much space do you need?",
+			"content": "Harrogate Storage Solutions is a family run self-storage business located in the heart of Harrogate Offering both internal storage and direct drive external units."
+		},
+		"copy": [
+			{
+				"type": "media",
+				"value": {
+					"image": {
+						"src": "//placehold.it/1600x1200",
+						"alt": "fallback"
+					},
+					"video": {
+						"src": "//placehold.it/1600x1200",
+						"alt": "video"
+					}
+				}
+			},
+			{
+				"type": "paragraph",
+				"value": {
+					"content": "At Harrogate Storage Solutions we take pride in offering more space at less cost."
+				}
+			},
+			{
+				"type": "paragraph",
+				"value": {
+					"content": "We have a range of unit sizes to suit a variety of requirements and with our competitive prices starting from £5.76 per week why not give our friendly and helpful staff a call."
+				}
+			},
+			{
+				"type": "paragraph",
+				"value": {
+					"content": "All our units are industry gold standard as standard and come with their own lock and key with 24/7 personal pin code access – no appointments necessary!"
+				}
+			},
+			{
+				"type": "paragraph",
+				"value": {
+					"content": "No endless corridors - direct access available."
+				}
+			},
+			{
+				"type": "paragraph",
+				"value": {
+					"content": "24 hour HD CCTV security"
+				}
+			},
+			{
+				"type": "paragraph",
+				"value": {
+					"content": "Short or long term lets available with one month minimum term."
+				}
+			},
+			{
+				"type": "paragraph",
+				"value": {
+					"content": "Free use of our courtesy vans (T&c’s apply)"
+				}
+			}
+		],
+		"pageBuilder": null,
+		"cta": {
+			"title": "Get in touch",
+			"content": "Fill in your details on our contact page and one of the team will get back to you as quickly as possible with a quote.",
+			"cta": {
+				"title": "Contact us",
+				"url": "/contact"
+			}
+		}
+	}
+}

@@ -5,13 +5,19 @@
 			'bg-white text-grey-700',
 		]"
 	>
-		<site-header class="border-4 border-red" />
+		<site-header
+			class="z-site-header"
+			v-bind="$props.global"
+		/>
 
-		<main class="flex-auto border-4 border-green">
+		<main class="flex-auto z-site-content">
 			<Nuxt />
 		</main>
 
-		<site-footer class="border-4 border-blue" />
+		<site-footer
+			class="z-site-footer"
+			v-bind="$props.global"
+		/>
 	</div>
 </template>
 
@@ -23,6 +29,13 @@
 		components: {
 			SiteHeader,
 			SiteFooter,
+		},
+
+		props: {
+			global: {
+				type: Object,
+				default: () => require('../content/global.json'),
+			},
 		},
 	};
 </script>

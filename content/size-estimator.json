@@ -1,0 +1,117 @@
+{
+	"title": "Harrogate Storage Solutions – Size estimator",
+	"description": "We take pride in offering more space at less cost",
+	"model": {
+		"intro": {
+			"title": "How much space do you need?",
+			"content": null
+		},
+		"sizeEstimator": [
+			{
+				"icon": "home",
+				"title": "Home",
+				"content": "How many bedrooms does your house/flat have?",
+				"items": [
+					{
+						"title": "1 Bedroom",
+						"figure": "50sqft"
+					},
+					{
+						"title": "2 Bedroom",
+						"figure": "80sqft"
+					},
+					{
+						"title": "3 Bedroom",
+						"figure": "150sqft"
+					},
+					{
+						"title": "4 Bedroom",
+						"figure": "180sqft"
+					}
+				]
+			},
+			{
+				"icon": "garage",
+				"title": "Garage",
+				"content": "What size is your garage?",
+				"items": [
+					{
+						"title": "1 Garage",
+						"figure": "80sqft"
+					},
+					{
+						"title": "2 Garage",
+						"figure": "180sqft"
+					}
+				]
+			},
+			{
+				"icon": "vehicle",
+				"title": "Vehicle",
+				"content": "How large is your vehicle?",
+				"items": [
+					{
+						"title": "1 Car",
+						"figure": "25sqft"
+					},
+					{
+						"title": "1 small van load",
+						"figure": "50sqft"
+					},
+					{
+						"title": "1 medium van load",
+						"figure": "75sqft"
+					},
+					{
+						"title": "1 small truck load",
+						"figure": "100sqft"
+					},
+					{
+						"title": "1 large van load",
+						"figure": "150sqft"
+					}
+				]
+			},
+			{
+				"icon": "boxes",
+				"title": "Boxes",
+				"content": "How many boxes do you have? boxes are (30x38x47)",
+				"items": [
+					{
+						"title": "50 Boxes",
+						"figure": "25sqft"
+					},
+					{
+						"title": "100 Boxes",
+						"figure": "50sqft"
+					},
+					{
+						"title": "150 Boxes",
+						"figure": "75sqft"
+					},
+					{
+						"title": "250 Boxes",
+						"figure": "100sqft"
+					},
+					{
+						"title": "450 Boxes",
+						"figure": "175sqft"
+					},
+					{
+						"title": "600 Boxes",
+						"figure": "250sqft"
+					}
+				]
+			}
+		],
+		"pageBuilder": null,
+		"cta": {
+			"title": "Get in touch",
+			"content": "Fill in your details on our contact page and one of the team will get back to you as quickly as possible with a quote.",
+			"cta": {
+				"title": "Contact us",
+				"url": "/contact"
+			}
+		}
+	}
+}
