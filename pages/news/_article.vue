@@ -1,12 +1,6 @@
 <template>
 	<div>
-		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: intro</span>
-
-			<div class="mt-4">
-				<pre v-text="$data.title" />
-			</div>
-		</section>
+		<intro v-bind="$data.model.intro" />
 
 		<content-builder
 			:components="$data.copy"
