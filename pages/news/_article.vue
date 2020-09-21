@@ -1,10 +1,13 @@
 <template>
 	<div>
-		<intro v-bind="$data.model.intro" />
-
-		<content-builder
-			:components="$data.copy"
+		<intro
+			:title="$data.title"
+			:content="$data.excerpt"
 		/>
+
+		<!-- <content-builder
+			:components="$data.copy"
+		/> -->
 	</div>
 </template>
 

@@ -2,25 +2,18 @@
 	<div>
 		<intro v-bind="$data.model.intro" />
 
-		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: all-news</span>
+		<news :items="$data.articles" />
 
-			<div class="mt-4">
-				<pre v-text="$data.articles" />
-			</div>
-		</section>
-
-		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: cta</span>
-
-			<div class="mt-4">
-				<pre v-text="$data.model.cta" />
-			</div>
-		</section>
+		<cta
+			class="mt-12 md:mt-24 xl:mt-32"
+			v-bind="$data.model.cta"
+		/>
 	</div>
 </template>
 
 <script>
+	import News from '../../components/builder/News';
+
 	export default {
 		async asyncData ({ $content }) {
 			const articles = await $content('articles').fetch();
@@ -60,6 +53,10 @@
 					}
 				]
 			}
-		}
+		},
+
+		components: {
+			News,
+		},
 	};
 </script>

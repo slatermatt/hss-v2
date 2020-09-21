@@ -2,29 +2,39 @@
 	<section>
 		<container class="space-y-12">
 			<article
-				v-for="(testimonial, index) in cTestimonials"
+				v-for="(article, index) in cArticles"
 				:key="index"
-				class="mx-auto max-w-xl md:max-w-2xl"
+				class="grid mx-auto max-w-3xl gap-4 md:max-w-4xl md:grid-cols-4 md:gap-0"
 			>
-				<h1
-					class="text-2xl text-brand-green font-bold"
-					v-text="testimonial.title"
-				/>
+				<div class="col-span-1">
+					<placeholder
+						v-if="article.thumbnail"
+						ratio="pt-3/4"
+					>
+						<img
+							:src="article.thumbnail.src"
+							:alt="article.thumbnail.alt"
+						>
+					</placeholder>
+				</div>
 
-				<blockquote
-					class="mt-4"
-					v-html="testimonial.content"
-				/>
+				<div class="md:ml-10 md:col-span-3">
+					<h1
+						class="text-2xl text-brand-green font-bold"
+						v-text="article.title"
+					/>
 
-				<p
-					class="font-bold text-grey-700 mt-4"
-					v-text="testimonial.author"
-				/>
+					<p
+						class="mt-4"
+						v-text="article.excerpt"
+					/>
 
-				<p
-					class="text-sm mt-2"
-					v-text="testimonial.date"
-				/>
+					<router-link
+						:to="`/news/${article.slug}`"
+						class="inline-block mt-4 text-grey-700 font-bold hover:underline"
+						v-text="'Read more'"
+					/>
+				</div>
 			</article>
 
 			<nav
@@ -71,12 +81,12 @@
 				return this.$props.items.reverse();
 			},
 
-			cTestimonials() {
-				const testimonials = Array(...this.cFlipped);
+			cArticles() {
+				const articles = Array(...this.cFlipped);
 				const from = this.$data.currentPage * this.$data.pageSize;
 				const to = from + this.$data.pageSize;
 
-				return testimonials.slice(from, to);
+				return articles.slice(from, to);
 			},
 
 			cPages() {
