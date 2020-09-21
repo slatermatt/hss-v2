@@ -10,13 +10,10 @@
 			</div>
 		</section>
 
-		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: cta</span>
-
-			<div class="mt-4">
-				<pre v-text="$data.model.cta" />
-			</div>
-		</section>
+		<cta
+			class="mt-12 md:mt-24 xl:mt-32"
+			v-bind="$data.model.cta"
+		/>
 	</div>
 </template>
 
