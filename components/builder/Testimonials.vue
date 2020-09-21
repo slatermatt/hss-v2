@@ -67,8 +67,12 @@
 		},
 
 		computed: {
+			cFlipped() {
+				return this.$props.items.reverse();
+			},
+
 			cTestimonials() {
-				const testimonials = Array(...this.$props.items);
+				const testimonials = Array(...this.cFlipped);
 				const from = this.$data.currentPage * this.$data.pageSize;
 				const to = from + this.$data.pageSize;
 

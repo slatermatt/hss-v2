@@ -9,22 +9,10 @@
 		"testimonials": {
 			"items": [
 				{
-					"title": "Great service",
-					"content": "Convenient, Secure and great price what more can you ask for. Highly recommended to anyone needing storage.",
-					"author": "James",
-					"date": "01/09/2017"
-				},
-				{
 					"title": "Quality At HSS",
 					"content": "We used HSS for 2 months, it was so handy, very good security, ample space for vehicles, access 24 hours a day, own code. Staff excellent. Recommend HSS ANY TIME. Cheers Les.",
 					"author": "Les Chandler",
 					"date": "07/06/2017"
-				},
-				{
-					"title": "Very happy",
-					"content": "Very happy with the service for our caravan storage, the 24hour access is a great bonus allowing us to have felixibility. Good location for us and friendly service from Lorraine too.",
-					"author": "Tj",
-					"date": "24/05/2017"
 				},
 				{
 					"title": "Superheros!",
@@ -33,10 +21,22 @@
 					"date": "23/05/2017"
 				},
 				{
+					"title": "Very happy",
+					"content": "Very happy with the service for our caravan storage, the 24hour access is a great bonus allowing us to have felixibility. Good location for us and friendly service from Lorraine too.",
+					"author": "Tj",
+					"date": "24/05/2017"
+				},
+				{
 					"title": "Great Service",
 					"content": "Really nice people and very very helpful, I use the storage for my property company and its very handy with lots of space for vehicles to pickup or deliver goods. Highly Recommended",
 					"author": "The Houseman",
 					"date": "19/05/2017"
+				},
+				{
+					"title": "Great service",
+					"content": "Convenient, Secure and great price what more can you ask for. Highly recommended to anyone needing storage.",
+					"author": "James",
+					"date": "01/09/2017"
 				},
 				{
 					"title": "Highly Professional and excellent service",
@@ -141,22 +141,22 @@
 					"date": "02/07/2019"
 				},
 				{
-					"title": "Friendly and helpful",
-					"content": "Thanks for everything. The storage unit and access was perfect for our needs, and everyone has been friendly and helpful.",
-					"author": "Michael Domstead",
-					"date": "05/10/2019"
-				},
-				{
 					"title": "Smooth process",
 					"content": "This is a great storage company in Harrogate. The units are clean, easy to access and good value. Michelle is friendly, professional and makes sure the whole process runs smoothly and without fuss. Highly recommended.",
 					"author": "Andrew Thompson",
 					"date": "27/09/2019"
 				},
 				{
+					"title": "Friendly and helpful",
+					"content": "Thanks for everything. The storage unit and access was perfect for our needs, and everyone has been friendly and helpful.",
+					"author": "Michael Domstead",
+					"date": "05/10/2019"
+				},
+				{
 					"title": "Very useful complementary van",
 					"content": "Great service. Really helpful and quick to respond. The van that’s available to borrow is really helpful.",
 					"author": "Daniel Ward",
-					"date": "14/11//2019"
+					"date": "14/11/2019"
 				},
 				{
 					"title": "I would always, without hesitation recommend Harrogate Storage Solutions",
