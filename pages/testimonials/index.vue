@@ -1,14 +1,12 @@
 <template>
 	<div>
-		<intro v-bind="$data.model.intro" />
+		<intro
+			v-bind="$data.model.intro"
+		/>
 
-		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: testimonials</span>
-
-			<div class="mt-4">
-				<pre v-text="$data.model.testimonials" />
-			</div>
-		</section>
+		<testimonials
+			v-bind="$data.model.testimonials"
+		/>
 
 		<cta
 			class="mt-12 md:mt-24 xl:mt-32"
@@ -18,6 +16,8 @@
 </template>
 
 <script>
+	import Testimonials from '../../components/builder/Testimonials';
+
 	export default {
 		async asyncData ({ $content }) {
 			return await $content('testimonials').fetch();
@@ -54,6 +54,10 @@
 					}
 				]
 			}
-		}
+		},
+
+		components: {
+			Testimonials,
+		},
 	};
 </script>
