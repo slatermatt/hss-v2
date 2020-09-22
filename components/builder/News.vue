@@ -1,10 +1,16 @@
 <template>
 	<section>
-		<container class="space-y-12">
+		<container class="space-y-10">
 			<article
 				v-for="(article, index) in cArticles"
 				:key="index"
-				class="grid mx-auto max-w-3xl gap-4 md:max-w-4xl md:grid-cols-4 md:gap-0"
+				:class="[
+					'grid mx-auto max-w-3xl gap-4',
+					'md:max-w-4xl md:grid-cols-4 md:gap-0',
+					{
+						'border-t border-grey-200 pt-10': index,
+					},
+				]"
 			>
 				<div class="col-span-1">
 					<placeholder
