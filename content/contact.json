@@ -47,17 +47,20 @@
 				{
 					"label": "Name",
 					"name": "name",
+					"placeholder": "Name",
 					"validation": "required"
 				},
 				{
 					"label": "Your email",
 					"name": "email",
+					"placeholder": "Email",
 					"validation": "bail|required|email"
 				},
 				{
 					"type": "text",
 					"label": "Phone",
 					"name": "phone",
+					"placeholder": "Phone",
 					"inputmode": "numeric",
 					"pattern": "[0-9]*",
 					"validation": "matches:/^[0-9-]+$/",
@@ -69,7 +72,7 @@
 					"type": "select",
 					"label": "Reason for enquiring",
 					"name": "reason",
-					"placeholder": "Select a reason",
+					"placeholder": "Reason for enquiring",
 					"options": {
 						"mornington-terrace": "Mornington Terrace",
 						"grainbeck-lane": "Grainbeck Lane",
@@ -78,8 +81,18 @@
 					"validation": "required"
 				},
 				{
+					"type": "textarea",
+					"label": "Message",
+					"name": "message",
+					"rows": 4,
+					"cols": 50,
+					"placeholder": "Message",
+					"Validation": "required"
+				},
+				{
+					"component": "e-button",
 					"type": "submit",
-					"label": "Send"
+					"title": "Send"
 				}
 			]
 		},

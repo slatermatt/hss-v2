@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@braid/vue-formulate": "^2.4.3",
     "@nuxt/content": "^1.5.0",
     "nuxt": "^2.14.0"
   },

@@ -4,18 +4,13 @@
 
 		<contact-info v-bind="$data.model.contactInfo" />
 
-		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: contact-form</span>
-
-			<div class="mt-4">
-				<pre v-text="$data.model.contactForm" />
-			</div>
-		</section>
+		<contact-form v-bind="$data.model.contactForm" />
 	</div>
 </template>
 
 <script>
 	import ContactInfo from '../../components/builder/ContactInfo';
+	import ContactForm from '../../components/builder/ContactForm';
 
 	export default {
 		async asyncData ({ $content }) {
@@ -57,6 +52,7 @@
 
 		components: {
 			ContactInfo,
+			ContactForm,
 		},
 	};
 </script>
