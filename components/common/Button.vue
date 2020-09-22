@@ -3,7 +3,7 @@
 		:is="cComponent"
 		:href="$props.url"
 		:class="[
-			$data.typeClasses[$props.type],
+			$data.classList[$props.variant],
 			'inline-block px-8 py-4',
 			'focus:outline-none',
 			'disabled:bg-grey-600',
@@ -12,6 +12,7 @@
 			},
 		]"
 		:disabled="$props.disabled"
+		v-bind="$attrs"
 	>
 		<span v-text="$props.title" />
 	</component>
@@ -30,7 +31,7 @@
 				default: null,
 			},
 
-			type: {
+			variant: {
 				type: String,
 				default: 'primary',
 			},
@@ -40,7 +41,7 @@
 
 		data() {
 			return {
-				typeClasses: {
+				classList: {
 					primary: [
 						'bg-brand-green text-white',
 						'hover:bg-brand-green-dark',

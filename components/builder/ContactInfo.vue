@@ -33,7 +33,7 @@
 
 				<e-button
 					class="mt-4"
-					type="secondary"
+					variant="secondary"
 					v-bind="location.cta"
 				/>
 			</div>
