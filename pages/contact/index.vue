@@ -2,13 +2,7 @@
 	<div>
 		<intro v-bind="$data.model.intro" />
 
-		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: contact-info</span>
-
-			<div class="mt-4">
-				<pre v-text="$data.model.contactInfo" />
-			</div>
-		</section>
+		<contact-info v-bind="$data.model.contactInfo" />
 
 		<section class="border border-blue p-5 overflow-scroll">
 			<span>component: contact-form</span>
@@ -17,18 +11,12 @@
 				<pre v-text="$data.model.contactForm" />
 			</div>
 		</section>
-
-		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: cta</span>
-
-			<div class="mt-4">
-				<pre v-text="$data.model.cta" />
-			</div>
-		</section>
 	</div>
 </template>
 
 <script>
+	import ContactInfo from '../../components/builder/ContactInfo';
+
 	export default {
 		async asyncData ({ $content }) {
 			return await $content('contact').fetch();
@@ -65,6 +53,10 @@
 					}
 				]
 			}
-		}
+		},
+
+		components: {
+			ContactInfo,
+		},
 	};
 </script>

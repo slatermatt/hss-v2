@@ -6,36 +6,38 @@
 			"title": "Get in touch",
 			"content": "Fill in your details below and one of the team will get back to you as quickly as possible with a quote."
 		},
-		"contactInfo": [
-			{
-				"title": "The Quarry Killinghall",
-				"number": {
-					"formatted": "01423536220",
-					"text": "01423 536220"
+		"contactInfo": {
+			"locations": [
+				{
+					"title": "The Quarry Killinghall",
+					"number": {
+						"formatted": "01423536220",
+						"text": "01423 536220"
+					},
+					"address": "Grainbeck Lane, Killinghall",
+					"town": "Harrogate",
+					"postcode": "HG3 2AA",
+					"cta": {
+						"title": "Directions",
+						"url": "https://www.google.co.uk/maps/place/Harrogate+Storage+Solutions/@54.0161121,-1.5635015,17z/data=!3m1!4b1!4m5!3m4!1s0x48795389bcb8c729:0x437bb825c40c8d46!8m2!3d54.016109!4d-1.5613128"
+					}
 				},
-				"address": "Grainbeck Lane, Killinghall",
-				"town": "Harrogate",
-				"postcode": "HG3 2AA",
-				"cta": {
-					"title": "Directions",
-					"url": "https://www.google.co.uk/maps/place/Harrogate+Storage+Solutions/@54.0161121,-1.5635015,17z/data=!3m1!4b1!4m5!3m4!1s0x48795389bcb8c729:0x437bb825c40c8d46!8m2!3d54.016109!4d-1.5613128"
+				{
+					"title": "Mornington Terrace",
+					"number": {
+						"formatted": "01423560947",
+						"text": "01423 560947"
+					},
+					"address": "2B Mornington Terrace",
+					"town": "Harrogate",
+					"postcode": "HG1 5DH",
+					"cta": {
+						"title": "Directions",
+						"url": "https://www.google.co.uk/maps/dir//Harrogate+Internal+Storage+Solutions,+2b+Mornington+Terrace,+Harrogate+HG1+5DH/@53.997223,-1.5315339,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x487953f7f4393643:0xa678a3705d59efb4!2m2!1d-1.5315092!2d53.9972055"
+					}
 				}
-			},
-			{
-				"title": "Mornington Terrace",
-				"number": {
-					"formatted": "01423560947",
-					"text": "01423 560947"
-				},
-				"address": "2B Mornington Terrace",
-				"town": "Harrogate",
-				"postcode": "HG1 5DH",
-				"cta": {
-					"title": "Directions",
-					"url": "https://www.google.co.uk/maps/dir//Harrogate+Internal+Storage+Solutions,+2b+Mornington+Terrace,+Harrogate+HG1+5DH/@53.997223,-1.5315339,21z/data=!4m8!4m7!1m0!1m5!1m1!1s0x487953f7f4393643:0xa678a3705d59efb4!2m2!1d-1.5315092!2d53.9972055"
-				}
-			}
-		],
+			]
+		},
 		"contactForm": {
 			"intro": {
 				"title": "Drop us a message",
