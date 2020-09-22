@@ -4,7 +4,12 @@
 			<article
 				v-for="(testimonial, index) in cTestimonials"
 				:key="index"
-				class="mx-auto max-w-xl md:max-w-2xl"
+				:class="[
+					'mx-auto max-w-xl md:max-w-2xl',
+					{
+						'border-t border-grey-200 pt-12': index,
+					},
+				]"
 			>
 				<h1
 					class="text-2xl text-brand-green font-bold"
