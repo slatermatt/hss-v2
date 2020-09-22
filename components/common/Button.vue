@@ -3,9 +3,9 @@
 		:is="cComponent"
 		:href="$props.url"
 		:class="[
-			'inline-block px-8 py-4 bg-brand-green text-white',
-			'hover:bg-brand-green-dark',
-			'focus:outline-none focus:bg-brand-green-dark',
+			$data.typeClasses[$props.type],
+			'inline-block px-8 py-4',
+			'focus:outline-none',
 			'disabled:bg-grey-600',
 			{
 				'opacity-75 bg-grey-700 cursor-not-allowed hover:bg-grey-700': $props.disabled,
@@ -30,7 +30,29 @@
 				default: null,
 			},
 
+			type: {
+				type: String,
+				default: 'primary',
+			},
+
 			disabled: Boolean,
+		},
+
+		data() {
+			return {
+				typeClasses: {
+					primary: [
+						'bg-brand-green text-white',
+						'hover:bg-brand-green-dark',
+						'focus:bg-brand-green-dark',
+					],
+					secondary: [
+						'bg-white text-brand-green',
+						'hover:bg-grey-200',
+						'focus:bg-grey-200',
+					],
+				},
+			};
 		},
 
 		computed: {
