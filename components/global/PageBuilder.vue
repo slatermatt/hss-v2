@@ -31,11 +31,13 @@
 
 	import Intro from '../builder/Intro';
 	import Feature from '../builder/Feature';
+	import Split from '../builder/Split';
 
 	export default {
 		components: {
 			Intro,
 			Feature,
+			Split,
 		},
 
 		props: {

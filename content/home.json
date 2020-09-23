@@ -86,9 +86,10 @@
 					"content": "Convenient central location with excellent parking facilities offering a wide variety of internal units suited to your needs.",
 					"items": null,
 					"image": {
-						"src": "//placehold.it/1600x1200",
+						"src": "//placehold.it/1600x900",
 						"alt": "Internal storage units"
 					},
+					"cta": null,
 					"flip": false
 				}
 			},
@@ -99,28 +100,10 @@
 					"content": "Our external storage site is situated on the on the outskirts of town, offering secure direct drive up storage units with 24 hr digital customer access 365 days a year.",
 					"items": null,
 					"image": {
-						"src": "//placehold.it/1600x1200",
+						"src": "//placehold.it/1600x900",
 						"alt": "Drive up External storage units"
 					},
-					"flip": true
-				}
-			},
-			{
-				"type": "split",
-				"value": {
-					"title": "Free courtesy van",
-					"content": "Transfer your items to your new self-storage unit with FREE use of our courtesy van.",
-					"items": [
-						"Available for 24 or 48 hours",
-						"No complicated handover",
-						"Simple and straightforward paperwork",
-						"Available to anyone renting a unit",
-						"T&C's apply."
-					],
-					"image": {
-						"src": "//placehold.it/1600x1200",
-						"alt": "Harrogate Storage Solutions courtesy van"
-					},
+					"cta": null,
 					"flip": true
 				}
 			},
@@ -159,6 +142,29 @@
 							"content": "We have a wide range of units available so we can meet your storage requirements."
 						}
 					]
+				}
+			},
+			{
+				"type": "split",
+				"value": {
+					"title": "Free courtesy van",
+					"content": "Transfer your items to your new self-storage unit with FREE use of our courtesy van.",
+					"items": [
+						"Available for 24 or 48 hours",
+						"No complicated handover",
+						"Simple and straightforward paperwork",
+						"Available to anyone renting a unit",
+						"T&C's apply."
+					],
+					"image": {
+						"src": "//placehold.it/1600x900",
+						"alt": "Harrogate Storage Solutions courtesy van"
+					},
+					"cta": {
+						"title": "Call us now",
+						"url": "/contact"
+					},
+					"flip": false
 				}
 			}
 		]

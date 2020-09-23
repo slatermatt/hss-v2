@@ -17,6 +17,7 @@
 		</section>
 
 		<page-builder
+			class="mb-12 md:mb-24 xl:mb-32"
 			:components="$data.model.pageBuilder"
 		/>
 	</div>

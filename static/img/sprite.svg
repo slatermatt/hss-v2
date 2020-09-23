@@ -1,5 +1,17 @@
 <svg xmlns:xlink="http://www.w3.org/1999/xlink">
 	<symbol
+		id="box"
+		viewBox="0 0 41 48"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<path d="M0 36.009L19 47.918V24.641L0 13V36.009Z" fill="currentColor"/>
+
+		<path d="M41 36.063L22 48V24.6683L41 13V36.063Z" fill="currentColor"/>
+
+		<path d="M20.5 0L1 10L20.5 22L40 9.5L20.5 0Z" fill="currentColor"/>
+	</symbol>
+	<symbol
 		id="security"
 		viewBox="0 0 60 60"
 		fill="none"
