@@ -38,6 +38,9 @@
 				}
 			]
 		},
+		"map": {
+			"src": "https://snazzymaps.com/embed/105536"
+		},
 		"contactForm": {
 			"intro": {
 				"title": "Drop us a message",

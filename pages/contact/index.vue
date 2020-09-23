@@ -4,12 +4,15 @@
 
 		<contact-info v-bind="$data.model.contactInfo" />
 
+		<e-map v-bind="$data.model.map" />
+
 		<contact-form v-bind="$data.model.contactForm" />
 	</div>
 </template>
 
 <script>
 	import ContactInfo from '../../components/builder/ContactInfo';
+	import EMap from '../../components/builder/Map';
 	import ContactForm from '../../components/builder/ContactForm';
 
 	export default {
@@ -52,6 +55,7 @@
 
 		components: {
 			ContactInfo,
+			EMap,
 			ContactForm,
 		},
 	};

@@ -52,6 +52,7 @@ module.exports = {
 				'logo': ratio(426, 112),
 				'9/16': ratio(16, 9),
 				'3/4': ratio(4, 3),
+				'1/2': ratio(2, 1),
 			},
 			spacing: {
 				em: '1em',
@@ -64,8 +65,11 @@ module.exports = {
 			},
 			maxWidth: {
 				container: relative(1400),
-				'logo': relative(120),
+				logo: relative(120),
 				'logo-xl': relative(160),
+			},
+			minHeight: {
+				map: relative(640),
 			},
 		},
 	},
