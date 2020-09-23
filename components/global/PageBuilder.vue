@@ -30,10 +30,12 @@
 	import upperFirst from 'lodash/upperFirst';
 
 	import Intro from '../builder/Intro';
+	import Feature from '../builder/Feature';
 
 	export default {
 		components: {
 			Intro,
+			Feature,
 		},
 
 		props: {

@@ -1,8 +1,6 @@
 <svg xmlns:xlink="http://www.w3.org/1999/xlink">
 	<symbol
 		id="security"
-		width="60"
-		height="60"
 		viewBox="0 0 60 60"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
@@ -22,8 +20,6 @@
 	</symbol>
 	<symbol
 		id="message"
-		width="60"
-		height="60"
 		viewBox="0 0 60 60"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
@@ -34,8 +30,6 @@
 	</symbol>
 	<symbol
 		id="key"
-		width="60"
-		height="60"
 		viewBox="0 0 60 60"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
@@ -46,8 +40,6 @@
 	</symbol>
 	<symbol
 		id="check"
-		width="60"
-		height="60"
 		viewBox="0 0 60 60"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
@@ -58,8 +50,6 @@
 	</symbol>
 	<symbol
 		id="calendar"
-		width="60"
-		height="60"
 		viewBox="0 0 60 60"
 		fill="none"
 		xmlns="http://www.w3.org/2000/svg"
