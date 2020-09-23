@@ -3,6 +3,7 @@ import VueFormulate from '@braid/vue-formulate';
 
 Vue.use(VueFormulate, {
 	classes: {
+		outer: 'w-full',
 		label: 'sr-only',
 		input(context) {
 			switch (context.classification) {

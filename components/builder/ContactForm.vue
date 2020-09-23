@@ -6,7 +6,7 @@
 			<formulate-form
 				v-model="$data.values"
 				:schema="$props.form"
-				class="max-w-lg w-full mx-auto space-y-6"
+				class="flex flex-col items-center max-w-lg mx-auto space-y-6"
 			/>
 		</container>
 	</section>
