@@ -129,7 +129,7 @@
 				"value": {
 					"features": [
 						{
-							"icon": "security-camera",
+							"icon": "security",
 							"title": "Full Security",
 							"content": "Our electric gated, alarmed and fenced premises in Harrogate are monitored 24/7 using the latest HD CCTV technology."
 						},
@@ -154,7 +154,7 @@
 							"content": "Our friendly team are on hand to help you out however we can."
 						},
 						{
-							"icon": "storage",
+							"icon": "boxes-alt",
 							"title": "Storage options",
 							"content": "We have a wide range of units available so we can meet your storage requirements."
 						}
