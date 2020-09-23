@@ -10,12 +10,12 @@
 			v-bind="$props.global"
 		/>
 
-		<main class="flex-auto z-site-content">
+		<main class="z-site-content flex-auto">
 			<Nuxt />
 		</main>
 
 		<site-footer
-			class="z-site-footer"
+			class="z-site-footer mt-10 md:mt-20 xl:mt-32"
 			v-bind="$props.global"
 		/>
 	</div>
