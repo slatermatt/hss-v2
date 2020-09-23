@@ -1,6 +1,6 @@
 <template>
-	<section class="hidden md:block">
-		<div class="min-h-map relative">
+	<section>
+		<div class="min-h-map relative bg-grey-300">
 			<iframe
 				:src="$props.src"
 				class="absolute inset-0 border-none w-full h-full"

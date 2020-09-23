@@ -1,12 +1,22 @@
 <template>
 	<div>
-		<intro v-bind="$data.model.intro" />
+		<intro
+			v-bind="$data.model.intro"
+		/>
 
-		<contact-info v-bind="$data.model.contactInfo" />
+		<contact-info
+			v-bind="$data.model.contactInfo"
+		/>
 
-		<e-map v-bind="$data.model.map" />
+		<e-map
+			class="hidden md:block"
+			v-bind="$data.model.map"
+		/>
 
-		<contact-form v-bind="$data.model.contactForm" />
+		<contact-form
+			class="mb-10 md:mb-20 xl:mb-32"
+			v-bind="$data.model.contactForm"
+		/>
 	</div>
 </template>
 

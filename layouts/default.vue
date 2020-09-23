@@ -15,7 +15,7 @@
 		</main>
 
 		<site-footer
-			class="z-site-footer mt-10 md:mt-20 xl:mt-32"
+			class="z-site-footer"
 			v-bind="$props.global"
 		/>
 	</div>
