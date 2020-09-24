@@ -1,12 +1,8 @@
 <template>
 	<div>
-		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: carousel</span>
-
-			<div class="mt-4">
-				<pre v-text="$data.model.carousel" />
-			</div>
-		</section>
+		<carousel
+			v-bind="$data.model.carousel"
+		/>
 
 		<section class="border border-blue p-5 overflow-scroll">
 			<span>component: cards</span>
@@ -24,6 +20,8 @@
 </template>
 
 <script>
+	import Carousel from '../components/builder/Carousel';
+
 	export default {
 		async asyncData ({ $content }) {
 			return await $content('home').fetch();
@@ -60,6 +58,10 @@
 					}
 				]
 			}
-		}
+		},
+
+		components: {
+			Carousel,
+		},
 	};
 </script>

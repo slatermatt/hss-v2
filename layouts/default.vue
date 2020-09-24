@@ -10,7 +10,7 @@
 			v-bind="$props.global"
 		/>
 
-		<main class="z-site-content flex-auto">
+		<main class="z-site-content flex-auto overflow-x-hidden">
 			<Nuxt />
 		</main>
 
