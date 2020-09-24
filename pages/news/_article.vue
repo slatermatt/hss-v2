@@ -1,16 +1,13 @@
 <template>
 	<div>
-		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: intro</span>
-
-			<div class="mt-4">
-				<pre v-text="$data.title" />
-			</div>
-		</section>
-
-		<content-builder
-			:components="$data.copy"
+		<intro
+			:title="$data.title"
+			:content="$data.excerpt"
 		/>
+
+		<!-- <content-builder
+			:components="$data.copy"
+		/> -->
 	</div>
 </template>
 

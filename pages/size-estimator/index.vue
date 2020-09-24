@@ -1,32 +1,24 @@
 <template>
 	<div>
-		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: intro</span>
+		<intro
+			v-bind="$data.model.intro"
+		/>
 
-			<div class="mt-4">
-				<pre v-text="$data.model.intro" />
-			</div>
-		</section>
+		<size-estimator
+			class="mt-12 md:mt-24"
+			v-bind="$data.model.sizeEstimator"
+		/>
 
-		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: size-estimator</span>
-
-			<div class="mt-4">
-				<pre v-text="$data.model.sizeEstimator" />
-			</div>
-		</section>
-
-		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: cta</span>
-
-			<div class="mt-4">
-				<pre v-text="$data.model.cta" />
-			</div>
-		</section>
+		<cta
+			class="mt-12 md:mt-24 xl:mt-32"
+			v-bind="$data.model.cta"
+		/>
 	</div>
 </template>
 
 <script>
+	import SizeEstimator from '../../components/builder/SizeEstimator';
+
 	export default {
 		async asyncData ({ $content }) {
 			return await $content('size-estimator').fetch();
@@ -63,6 +55,10 @@
 					}
 				]
 			}
-		}
+		},
+
+		components: {
+			SizeEstimator,
+		},
 	};
 </script>

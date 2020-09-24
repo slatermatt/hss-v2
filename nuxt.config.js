@@ -52,7 +52,8 @@ export default {
 	** https://nuxtjs.org/guide/plugins
 	*/
 	plugins: [
-		'~/components/include.js',
+		'~/components/include',
+		'~/plugins/vue-formulate',
 	],
 
 	/*

@@ -1,0 +1,19 @@
+{
+	"thumbnail": {
+		"src": "//placehold.it/400x300",
+		"alt": "article thumbnail"
+	},
+	"title": "15 different size storage units to choose from",
+	"excerpt": "Here at Harrogate Storage Solutions we have 15 different size storage units to choose from so you don't need to pay for space you don't use.",
+	"copy": [
+		{
+			"type": "media",
+			"value": {
+				"image": {
+					"src": "//placehold.it/1600x1200",
+					"alt": "alt text"
+				}
+			}
+		}
+	]
+}

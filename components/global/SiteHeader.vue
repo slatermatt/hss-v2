@@ -1,5 +1,5 @@
 <template>
-	<header class="sticky top-0 bg-brand-green md:shadow-2xl">
+	<header class="sticky top-0 bg-brand-green shadow-lg md:relative md:shadow-2xl">
 		<container
 			:class="[
 				'flex items-center justify-between bg-brand-green',

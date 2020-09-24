@@ -29,13 +29,15 @@
 	import camelCase from 'lodash/camelCase';
 	import upperFirst from 'lodash/upperFirst';
 
-	// import Intro from '../builder/Intro';
-	// import Hero from '../builder/Hero';
+	import Intro from '../builder/Intro';
+	import Feature from '../builder/Feature';
+	import Split from '../builder/Split';
 
 	export default {
 		components: {
-			// Intro,
-			// Hero,
+			Intro,
+			Feature,
+			Split,
 		},
 
 		props: {

@@ -1,40 +1,30 @@
 <template>
 	<div>
-		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: intro</span>
+		<intro
+			v-bind="$data.model.intro"
+		/>
 
-			<div class="mt-4">
-				<pre v-text="$data.model.intro" />
-			</div>
-		</section>
+		<contact-info
+			v-bind="$data.model.contactInfo"
+		/>
 
-		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: contact-info</span>
+		<e-map
+			class="hidden md:block"
+			v-bind="$data.model.map"
+		/>
 
-			<div class="mt-4">
-				<pre v-text="$data.model.contactInfo" />
-			</div>
-		</section>
-
-		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: contact-form</span>
-
-			<div class="mt-4">
-				<pre v-text="$data.model.contactForm" />
-			</div>
-		</section>
-
-		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: cta</span>
-
-			<div class="mt-4">
-				<pre v-text="$data.model.cta" />
-			</div>
-		</section>
+		<contact-form
+			class="mb-10 md:mb-20 xl:mb-32"
+			v-bind="$data.model.contactForm"
+		/>
 	</div>
 </template>
 
 <script>
+	import ContactInfo from '../../components/builder/ContactInfo';
+	import EMap from '../../components/builder/Map';
+	import ContactForm from '../../components/builder/ContactForm';
+
 	export default {
 		async asyncData ({ $content }) {
 			return await $content('contact').fetch();
@@ -71,6 +61,12 @@
 					}
 				]
 			}
-		}
+		},
+
+		components: {
+			ContactInfo,
+			EMap,
+			ContactForm,
+		},
 	};
 </script>

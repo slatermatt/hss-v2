@@ -9,8 +9,7 @@
 					"alt": "fallback"
 				},
 				"video": {
-					"src": "//placehold.it/1600x1200",
-					"alt": "video"
+					"src": "https://harrogatestoragesolutions.co.uk/assets/static/video/header-video.mp4"
 				}
 			},
 			"messages": [
@@ -28,49 +27,51 @@
 				}
 			]
 		},
-		"cards": [
-			{
-				"icon": "house",
-				"title": "Domestic/Personal Storage",
-				"content": "Are you between houses? Having a clear out? Redecorating, extending or renovating? Need to combine two homes into one? – Then we have the solution.",
-				"items": [
-					"A wide variety of sizes",
-					"Competetive pricing",
-					"Flexible rental period",
-					"Secure gold standard units",
-					"Personal pin access 24/7",
-					"Use of free courtesy vans"
-				],
-				"link": {
-					"title": "How much space do I need?",
-					"url": "/size-estimator"
+		"cards": {
+			"items": [
+				{
+					"icon": "home-alt",
+					"title": "Domestic/Personal Storage",
+					"content": "Are you between houses? Having a clear out? Redecorating, extending or renovating? Need to combine two homes into one? – Then we have the solution.",
+					"items": [
+						"A wide variety of sizes",
+						"Competetive pricing",
+						"Flexible rental period",
+						"Secure gold standard units",
+						"Personal pin access 24/7",
+						"Use of free courtesy vans"
+					],
+					"link": {
+						"title": "How much space do I need?",
+						"url": "/size-estimator"
+					},
+					"cta": {
+						"title": "Contact us",
+						"url": "/contact"
+					}
 				},
-				"cta": {
-					"title": "Contact us",
-					"url": "/contact"
+				{
+					"icon": "garage",
+					"title": "Business/Commercial Storage",
+					"content": "As a business customer you can use self storage as an extension to your own premises. Store tools and equipment, excess furniture, surplus stock or self-managed archival material.",
+					"items": [
+						"Fully flexible lease agreement",
+						"24/7 access 365 days a year",
+						"Direct drive up units",
+						"No business rates or utilities",
+						"No maintenance costs"
+					],
+					"link": {
+						"title": "How much space do I need?",
+						"url": "/size-estimator"
+					},
+					"cta": {
+						"title": "Contact us",
+						"url": "/contact"
+					}
 				}
-			},
-			{
-				"icon": "garage",
-				"title": "Business/Commercial Storage",
-				"content": "As a business customer you can use self storage as an extension to your own premises. Store tools and equipment, excess furniture, surplus stock or self-managed archival material.",
-				"items": [
-					"Fully flexible lease agreement",
-					"24/7 access 365 days a year",
-					"Direct drive up units",
-					"No business rates or utilities",
-					"No maintenance costs"
-				],
-				"link": {
-					"title": "How much space do I need?",
-					"url": "/size-estimator"
-				},
-				"cta": {
-					"title": "Contact us",
-					"url": "/contact"
-				}
-			}
-		],
+			]
+		},
 		"pageBuilder": [
 			{
 				"type": "intro",
@@ -86,9 +87,10 @@
 					"content": "Convenient central location with excellent parking facilities offering a wide variety of internal units suited to your needs.",
 					"items": null,
 					"image": {
-						"src": "//placehold.it/1600x1200",
+						"src": "//placehold.it/1600x900",
 						"alt": "Internal storage units"
 					},
+					"cta": null,
 					"flip": false
 				}
 			},
@@ -99,28 +101,10 @@
 					"content": "Our external storage site is situated on the on the outskirts of town, offering secure direct drive up storage units with 24 hr digital customer access 365 days a year.",
 					"items": null,
 					"image": {
-						"src": "//placehold.it/1600x1200",
+						"src": "//placehold.it/1600x900",
 						"alt": "Drive up External storage units"
 					},
-					"flip": true
-				}
-			},
-			{
-				"type": "split",
-				"value": {
-					"title": "Free courtesy van",
-					"content": "Transfer your items to your new self-storage unit with FREE use of our courtesy van.",
-					"items": [
-						"Available for 24 or 48 hours",
-						"No complicated handover",
-						"Simple and straightforward paperwork",
-						"Available to anyone renting a unit",
-						"T&C's apply."
-					],
-					"image": {
-						"src": "//placehold.it/1600x1200",
-						"alt": "Harrogate Storage Solutions courtesy van"
-					},
+					"cta": null,
 					"flip": true
 				}
 			},
@@ -129,7 +113,7 @@
 				"value": {
 					"features": [
 						{
-							"icon": "security-camera",
+							"icon": "security",
 							"title": "Full Security",
 							"content": "Our electric gated, alarmed and fenced premises in Harrogate are monitored 24/7 using the latest HD CCTV technology."
 						},
@@ -154,11 +138,34 @@
 							"content": "Our friendly team are on hand to help you out however we can."
 						},
 						{
-							"icon": "storage",
+							"icon": "boxes-alt",
 							"title": "Storage options",
 							"content": "We have a wide range of units available so we can meet your storage requirements."
 						}
 					]
+				}
+			},
+			{
+				"type": "split",
+				"value": {
+					"title": "Free courtesy van",
+					"content": "Transfer your items to your new self-storage unit with FREE use of our courtesy van.",
+					"items": [
+						"Available for 24 or 48 hours",
+						"No complicated handover",
+						"Simple and straightforward paperwork",
+						"Available to anyone renting a unit",
+						"T&C's apply."
+					],
+					"image": {
+						"src": "//placehold.it/1600x900",
+						"alt": "Harrogate Storage Solutions courtesy van"
+					},
+					"cta": {
+						"title": "Call us now",
+						"url": "/contact"
+					},
+					"flip": false
 				}
 			}
 		]

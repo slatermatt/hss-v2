@@ -1,6 +1,6 @@
 <template>
 	<footer class="bg-brand-green text-white">
-		<container class="py-8">
+		<container class="py-8 md:py-12 lg:py-20">
 			<nav>
 				<ul class="flex items-center space-x-4 justify-center">
 					<li

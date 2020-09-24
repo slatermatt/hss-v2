@@ -44,6 +44,8 @@ module.exports = {
 				'1/2': '50%',
 				...widths,
 				...(negative(widths)),
+				...theme('spacing'),
+				...(negative(theme('spacing'))),
 			}),
 			transformOrigin: {
 				'left-center': 'left center',
@@ -51,9 +53,13 @@ module.exports = {
 			padding: {
 				'logo': ratio(426, 112),
 				'9/16': ratio(16, 9),
+				'3/4': ratio(4, 3),
+				'1/2': ratio(2, 1),
+				'4/3': ratio(3, 4),
 			},
 			spacing: {
 				em: '1em',
+				...widths,
 			},
 			height: {
 				'2px': '2px',
@@ -63,8 +69,15 @@ module.exports = {
 			},
 			maxWidth: {
 				container: relative(1400),
-				'logo': relative(120),
+				video: relative(2560),
+				logo: relative(120),
 				'logo-xl': relative(160),
+			},
+			maxHeight: {
+				carousel: relative(800),
+			},
+			minHeight: {
+				map: relative(640),
 			},
 		},
 	},

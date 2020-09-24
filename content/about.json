@@ -3,7 +3,7 @@
 	"description": "We take pride in offering more space at less cost",
 	"model": {
 		"intro": {
-			"title": "How much space do you need?",
+			"title": "About",
 			"content": "Harrogate Storage Solutions is a family run self-storage business located in the heart of Harrogate Offering both internal storage and direct drive external units."
 		},
 		"copy": [
