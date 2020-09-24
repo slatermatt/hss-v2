@@ -27,49 +27,51 @@
 				}
 			]
 		},
-		"cards": [
-			{
-				"icon": "house",
-				"title": "Domestic/Personal Storage",
-				"content": "Are you between houses? Having a clear out? Redecorating, extending or renovating? Need to combine two homes into one? – Then we have the solution.",
-				"items": [
-					"A wide variety of sizes",
-					"Competetive pricing",
-					"Flexible rental period",
-					"Secure gold standard units",
-					"Personal pin access 24/7",
-					"Use of free courtesy vans"
-				],
-				"link": {
-					"title": "How much space do I need?",
-					"url": "/size-estimator"
+		"cards": {
+			"items": [
+				{
+					"icon": "home-alt",
+					"title": "Domestic/Personal Storage",
+					"content": "Are you between houses? Having a clear out? Redecorating, extending or renovating? Need to combine two homes into one? – Then we have the solution.",
+					"items": [
+						"A wide variety of sizes",
+						"Competetive pricing",
+						"Flexible rental period",
+						"Secure gold standard units",
+						"Personal pin access 24/7",
+						"Use of free courtesy vans"
+					],
+					"link": {
+						"title": "How much space do I need?",
+						"url": "/size-estimator"
+					},
+					"cta": {
+						"title": "Contact us",
+						"url": "/contact"
+					}
 				},
-				"cta": {
-					"title": "Contact us",
-					"url": "/contact"
+				{
+					"icon": "garage",
+					"title": "Business/Commercial Storage",
+					"content": "As a business customer you can use self storage as an extension to your own premises. Store tools and equipment, excess furniture, surplus stock or self-managed archival material.",
+					"items": [
+						"Fully flexible lease agreement",
+						"24/7 access 365 days a year",
+						"Direct drive up units",
+						"No business rates or utilities",
+						"No maintenance costs"
+					],
+					"link": {
+						"title": "How much space do I need?",
+						"url": "/size-estimator"
+					},
+					"cta": {
+						"title": "Contact us",
+						"url": "/contact"
+					}
 				}
-			},
-			{
-				"icon": "garage",
-				"title": "Business/Commercial Storage",
-				"content": "As a business customer you can use self storage as an extension to your own premises. Store tools and equipment, excess furniture, surplus stock or self-managed archival material.",
-				"items": [
-					"Fully flexible lease agreement",
-					"24/7 access 365 days a year",
-					"Direct drive up units",
-					"No business rates or utilities",
-					"No maintenance costs"
-				],
-				"link": {
-					"title": "How much space do I need?",
-					"url": "/size-estimator"
-				},
-				"cta": {
-					"title": "Contact us",
-					"url": "/contact"
-				}
-			}
-		],
+			]
+		},
 		"pageBuilder": [
 			{
 				"type": "intro",

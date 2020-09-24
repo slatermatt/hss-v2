@@ -1,16 +1,14 @@
 <template>
 	<div>
 		<carousel
+			class="z-1"
 			v-bind="$data.model.carousel"
 		/>
 
-		<section class="border border-blue p-5 overflow-scroll">
-			<span>component: cards</span>
-
-			<div class="mt-4">
-				<pre v-text="$data.model.cards" />
-			</div>
-		</section>
+		<cards
+			class="relative mt-12 md:mt-24 lg:-mt-16 z-2"
+			v-bind="$data.model.cards"
+		/>
 
 		<page-builder
 			class="mb-12 md:mb-24 xl:mb-32"
@@ -21,6 +19,7 @@
 
 <script>
 	import Carousel from '../components/builder/Carousel';
+	import Cards from '../components/builder/Cards';
 
 	export default {
 		async asyncData ({ $content }) {
@@ -62,6 +61,7 @@
 
 		components: {
 			Carousel,
+			Cards,
 		},
 	};
 </script>
