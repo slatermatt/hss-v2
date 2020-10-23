@@ -14,6 +14,8 @@
 </template>
 
 <script>
+	import ContentBuilder from '../../components/builder/ContentBuilder';
+
 	export default {
 		async asyncData ({ $content }) {
 			return await $content('about').fetch();
@@ -49,7 +51,11 @@
 						content: this.$data.description
 					}
 				]
-			}
-		}
+			};
+		},
+
+		components: {
+			ContentBuilder,
+		},
 	};
 </script>

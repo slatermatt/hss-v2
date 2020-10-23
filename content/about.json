@@ -10,13 +10,10 @@
 			{
 				"type": "media",
 				"value": {
+					"ratio": "pt-3/4",
 					"image": {
 						"src": "//placehold.it/1600x1200",
 						"alt": "fallback"
-					},
-					"video": {
-						"src": "//placehold.it/1600x1200",
-						"alt": "video"
 					}
 				}
 			},

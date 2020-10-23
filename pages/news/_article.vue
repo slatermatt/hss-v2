@@ -5,13 +5,16 @@
 			:content="$data.excerpt"
 		/>
 
-		<!-- <content-builder
+		<content-builder
 			:components="$data.copy"
-		/> -->
+			class="mb-10 md:mb-16 xl:mb-24"
+		/>
 	</div>
 </template>
 
 <script>
+	import ContentBuilder from '../../components/builder/ContentBuilder';
+
 	export default {
 		async asyncData ({ $content, params }) {
 			return await $content(`/articles/${params.article}`).fetch();
@@ -47,7 +50,11 @@
 						content: this.$data.excerpt
 					}
 				]
-			}
-		}
+			};
+		},
+
+		components: {
+			ContentBuilder,
+		},
 	};
 </script>
